@@ -1,0 +1,40 @@
+\documentclass[14pt]{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[russian,english]{babel}
+\usepackage{amsmath}
+\usepackage{cmap}
+\usepackage[a4paper,left=4cm, right=4cm, top=4cm, bottom=4cm]{geometry}
+\title{Книга 1}
+\author{Имя Автора1 \and Имя Автора2}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{center}
+    {\huge Книга что-то там...}
+\end{center}
+\thispagestyle{empty}
+
+\newpage
+\hfill \break
+\renewcommand{\contentsname}{Содержание}
+\tableofcontents
+\thispagestyle{empty}
+
+\newpage
+\section{Введение}
+\tiny{\textbf{Текст введения жирным} \textit{Текст введения курсивом} Текст введения обычным}
+
+\section{Основная часть}
+\large{\textbf{Текст основной части жирным} \textit{Текст основной части курсивом} Текст основной части обычным}
+
+\subsection{Подраздел}
+\large{\textbf{Текст подраздела жирным} \textit{Текст подраздела курсивом} Текст подраздела обычным}
+
+\section{Заключение}
+\huge{\textbf{Текст заключения жирным} \textit{Текст заключения курсивом} Текст заключения обычным}
+
+\end{document}

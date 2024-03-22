@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.14)  15 MAR 2024 17:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.14)  23 MAR 2024 01:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**task1_article.tex
-(./task1_article.tex
+**article.tex book.tex report.tex
+(./article.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-01-21>
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
@@ -147,7 +147,76 @@ Package: cmap 2021/02/06 v1.0j CMap support: searchable PDF
 
 Package cmap Warning: fontenc already loaded - some fonts may be unprocessed.
 
-) (/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
+Package: multicol 2021/10/28 v1.9b multicolumn formatting (FMi)
+\c@tracingmulticols=\count274
+\mult@box=\box52
+\multicol@leftmargin=\dimen149
+\c@unbalance=\count275
+\c@collectmore=\count276
+\doublecol@number=\count277
+\multicoltolerance=\count278
+\multicolpretolerance=\count279
+\full@width=\dimen150
+\page@free=\dimen151
+\premulticols=\dimen152
+\postmulticols=\dimen153
+\multicolsep=\skip52
+\multicolbaselineskip=\skip53
+\partial@page=\box53
+\last@line=\box54
+\maxbalancingoverflow=\dimen154
+\mult@rightbox=\box55
+\mult@grightbox=\box56
+\mult@firstbox=\box57
+\mult@gfirstbox=\box58
+\@tempa=\box59
+\@tempa=\box60
+\@tempa=\box61
+\@tempa=\box62
+\@tempa=\box63
+\@tempa=\box64
+\@tempa=\box65
+\@tempa=\box66
+\@tempa=\box67
+\@tempa=\box68
+\@tempa=\box69
+\@tempa=\box70
+\@tempa=\box71
+\@tempa=\box72
+\@tempa=\box73
+\@tempa=\box74
+\@tempa=\box75
+\@tempa=\box76
+\@tempa=\box77
+\@tempa=\box78
+\@tempa=\box79
+\@tempa=\box80
+\@tempa=\box81
+\@tempa=\box82
+\@tempa=\box83
+\@tempa=\box84
+\@tempa=\box85
+\@tempa=\box86
+\@tempa=\box87
+\@tempa=\box88
+\@tempa=\box89
+\@tempa=\box90
+\@tempa=\box91
+\@tempa=\box92
+\@tempa=\box93
+\@tempa=\box94
+\c@minrows=\count280
+\c@columnbadness=\count281
+\c@finalcolumnbadness=\count282
+\last@try=\dimen155
+\multicolovershoot=\dimen156
+\multicolundershoot=\dimen157
+\mult@nat@firstbox=\box95
+\colbreak@box=\box96
+\mc@col@check@num=\count283
+)
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
@@ -160,51 +229,52 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 (/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
 Package: iftex 2020/03/06 v1.0d TeX engine tests
 ))
-\Gm@cnth=\count274
-\Gm@cntv=\count275
-\c@Gm@tempcnt=\count276
-\Gm@bindingoffset=\dimen149
-\Gm@wd@mp=\dimen150
-\Gm@odd@mp=\dimen151
-\Gm@even@mp=\dimen152
-\Gm@layoutwidth=\dimen153
-\Gm@layoutheight=\dimen154
-\Gm@layouthoffset=\dimen155
-\Gm@layoutvoffset=\dimen156
+\Gm@cnth=\count284
+\Gm@cntv=\count285
+\c@Gm@tempcnt=\count286
+\Gm@bindingoffset=\dimen158
+\Gm@wd@mp=\dimen159
+\Gm@odd@mp=\dimen160
+\Gm@even@mp=\dimen161
+\Gm@layoutwidth=\dimen162
+\Gm@layoutheight=\dimen163
+\Gm@layouthoffset=\dimen164
+\Gm@layoutvoffset=\dimen165
 \Gm@dimlist=\toks27
 )
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count277
-\l__pdf_internal_box=\box52
+\l__color_backend_stack_int=\count287
+\l__pdf_internal_box=\box97
 )
 
 LaTeX Warning: Unused global option(s):
     [14pt].
 
-(./task1_article.aux)
-\openout1 = `task1_article.aux'.
+(./article.aux)
+\openout1 = `article.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
-LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 13.
-LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for T2A/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
  (/usr/share/texlive/texmf-dist/tex/latex/ucs/ucsencs.def
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
-LaTeX Info: Redefining \th on input line 13.
+LaTeX Info: Redefining \th on input line 14.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -213,14 +283,14 @@ LaTeX Info: Redefining \th on input line 13.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(170.71652pt, 256.07483pt, 170.71652pt)
+* h-part:(L,W,R)=(85.35826pt, 426.79135pt, 85.35826pt)
 * v-part:(T,H,B)=(56.9055pt, 731.23584pt, 56.9055pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=256.07483pt
+* \textwidth=426.79135pt
 * \textheight=731.23584pt
-* \oddsidemargin=98.44653pt
-* \evensidemargin=98.44653pt
+* \oddsidemargin=13.08827pt
+* \evensidemargin=13.08827pt
 * \topmargin=-52.36449pt
 * \headheight=12.0pt
 * \headsep=25.0pt
@@ -242,52 +312,38 @@ LaTeX Info: Redefining \th on input line 13.
 <<t2a.cmap>> (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-4.def
 File: uni-4.def 2013/05/13 UCS: Unicode data U+0400..U+04FF
 )<<ot1.cmap>><<oml.cmap>><<oms.cmap>><<omx.cmap>>
-Underfull \hbox (badness 10000) in paragraph at lines 20--22
+Underfull \hbox (badness 10000) in paragraph at lines 21--23
 
  []
 
-(./task1_article.toc)
+(./article.toc)
 \tf@toc=\write3
-\openout3 = `task1_article.toc'.
+\openout3 = `article.toc'.
 
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Overfull \hbox (15.35883pt too wide) in paragraph at lines 30--31
-\T2A/cmr/bx/n/12 Текст основной части жирным \T2A/cmr/m/it/12 Текст основной
- []
-
-
-Overfull \hbox (1.40057pt too wide) in paragraph at lines 33--34
-\T2A/cmr/bx/n/12 Текст подраздела жирным \T2A/cmr/m/it/12 Текст подраздела
- []
-
-
-Overfull \hbox (14.61374pt too wide) in paragraph at lines 36--37
-\T2A/cmr/bx/n/20.74 Текст заключения жирным
- []
-
-[2] (./task1_article.aux) ) 
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
+(./article.aux) ) 
 Here is how much of TeX's memory you used:
- 4392 strings out of 479648
- 65471 string characters out of 5886115
- 371645 words of memory out of 5000000
- 22285 multiletter control sequences out of 15000+600000
+ 4532 strings out of 479648
+ 67790 string characters out of 5886115
+ 377597 words of memory out of 5000000
+ 22422 multiletter control sequences out of 15000+600000
  484665 words of font info for 56 fonts, out of 8000000 for 9000
  475 hyphenation exceptions out of 8191
- 55i,6n,62p,338b,690s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-
-t2a.enc}</usr/share/texmf/fonts/type1/public/cm-super/sfbx0900.pfb></usr/share/
-texmf/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type1/pu
-blic/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx14
-40.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/t
-exmf/fonts/type1/public/cm-super/sfrm0900.pfb></usr/share/texmf/fonts/type1/pub
-lic/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm120
-0.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/te
-xmf/fonts/type1/public/cm-super/sfrm2074.pfb></usr/share/texmf/fonts/type1/publ
-ic/cm-super/sfti0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200
-.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti2074.pfb>
-Output written on task1_article.pdf (2 pages, 165688 bytes).
+ 55i,6n,62p,352b,690s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t2a.enc}</
+usr/share/texmf/fonts/type1/public/cm-super/sfbx0900.pfb></usr/share/texmf/font
+s/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf/fonts/type1/public/cm-su
+per/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></u
+sr/share/texmf/fonts/type1/public/cm-super/sfbx2074.pfb></usr/share/texmf/fonts
+/type1/public/cm-super/sfrm0900.pfb></usr/share/texmf/fonts/type1/public/cm-sup
+er/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></us
+r/share/texmf/fonts/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf/fonts/
+type1/public/cm-super/sfrm2074.pfb></usr/share/texmf/fonts/type1/public/cm-supe
+r/sfti0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1200.pfb></usr
+/share/texmf/fonts/type1/public/cm-super/sfti2074.pfb>
+Output written on article.pdf (2 pages, 165668 bytes).
 PDF statistics:
  70 PDF objects out of 1000 (max. 8388607)
  46 compressed objects within 1 object stream

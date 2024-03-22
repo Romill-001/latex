@@ -4,8 +4,10 @@
 \usepackage[russian,english]{babel}
 \usepackage{amsmath}
 \usepackage{cmap}
-\usepackage[a4paper,left=2cm, right=3cm, top=2cm, bottom=2cm]{geometry}
-\title{Отчёт 1}
+\usepackage{multicol}
+\usepackage[a4paper, left=3cm, right=3cm, top=2cm, bottom=2cm]{geometry}
+
+\title{Статья 1}
 \author{Имя Автора1 \and Имя Автора2}
 \date{\today}
 
@@ -14,19 +16,29 @@
 \maketitle
 
 \begin{center}
-    {\huge Информация об отчёте}
+    {\huge Информация о статье}
 \end{center}
 \hfill \break
 \renewcommand{\contentsname}{Содержание}
 \tableofcontents
 \thispagestyle{empty}
+
 \newpage
+\begin{multicols}{3}
 \section{Введение}
-\tiny{\textbf{Текст введения жирным} \textit{Текст введения курсивом} Текст введения обычным}
+\raggedright
+\small{\textbf{Текст введения жирным} \textit{Текст введения курсивом} Текст введения обычным}
+
 \section{Основная часть}
+\raggedright
 \large{\textbf{Текст основной части жирным} \textit{Текст основной части курсивом} Текст основной части обычным}
+
 \subsection{Подраздел}
 \large{\textbf{Текст подраздела жирным} \textit{Текст подраздела курсивом} Текст подраздела обычным}
+
 \section{Заключение}
+\raggedright
 \huge{\textbf{Текст заключения жирным} \textit{Текст заключения курсивом} Текст заключения обычным}
+\end{multicols}
+
 \end{document}

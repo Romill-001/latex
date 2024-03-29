@@ -1,0 +1,103 @@
+\documentclass[14pt]{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[russian,english]{babel}
+\usepackage{amsmath}
+\usepackage{cmap}
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage{enumitem}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{multirow}
+\usepackage[a4paper, left=2cm, right=2cm, top=2cm, bottom=2cm]{geometry}
+\renewcommand{\labelenumii}{\arabic{enumi}.\arabic{enumii}.}
+
+\begin{document}
+\textbf{Нумерованный список:}
+\begin{enumerate}
+    \item Первый элемент
+    \item Второй элемент
+    \item Третий элемент
+\end{enumerate}
+
+\textbf{Маркированный список:}
+\begin{itemize}
+    \item Первый элемент
+    \item Второй элемент
+    \item Третий элемент
+\end{itemize}
+
+\textbf{Словарь:}
+\begin{description}
+    \item[один] первый элемент
+    \item[два] второй элемент
+    \item[три] третий элемент   
+\end{description}
+
+\textbf{Кастомный список:}
+\begin{enumerate}
+    \item Первый элемент
+    \begin{itemize}
+        \item Вложенный маркированный список
+    \end{itemize}
+    \item Второй элемент
+    \begin{enumerate}
+        \item Вложенный Нумерованный список
+    \end{enumerate}
+    \item Третий элемент
+    \begin{itemize}[label=$\bigodot$]
+        \item Вложенный список с другим маркером
+        \item 2
+        \item 3
+        \item 4
+        \item 5
+    \end{itemize}
+    \item Четвёртый элемент
+    \begin{itemize}[topsep=10pt, partopsep=10pt,itemsep = 10pt, parsep=10pt, left = 50pt]
+        \item Вложенный список ...
+        \item 1
+        \item 2
+        \item 3
+        \item 4
+        \item 5
+    \end{itemize}
+\end{enumerate}
+\newpage
+\begin{table}[h]
+    \centering
+    \caption*{Таблица 1 - подпись сверху
+    }
+    \begin{tabular}{|c|c|c|c|}
+        \hline
+        \multicolumn{2}{|c|}{Заголовок 1} & \multicolumn{2}{c|}{Заголовок 2} \\
+        \hline
+        Ячейка 1 & Ячейка 2 & Ячейка 3 & Ячейка 4 \\
+        \hline
+        \multirow{2}{*}{Объединенная строка} & \multicolumn{2}{|c|}{Объединенные ячейки} & Ячейка 5 \\
+        \cline{2-4}
+        & Ячейка 6 & Ячейка 7 & Ячейка 8 \\
+        \hline
+        Ячейка 9 & Ячейка 10 & Ячейка 11 & Ячейка 12 \\
+        \hline
+        \multirow{2}{*}{Объединенная строка} & Ячейка 13 & \multicolumn{2}{|c|}{Объединенные ячейки} \\
+        \cline{2-4}
+        & Ячейка 14 & Ячейка 15 & Ячейка 16 \\
+        \hline
+        Ячейка 17 & Ячейка 18 & Ячейка 19 & Ячейка 20 \\
+        \hline
+        
+        \end{tabular}
+    \caption*{Таблица 1 - подпись снизу}
+\end{table}
+
+\begin{tabbing}
+    1 \= 2 \= 3 \= 4 \= 5 \\
+    \kill
+    \hspace{2cm} \= \hspace{2cm} \= \hspace{2cm} \= \hspace{2cm} \= \kill
+    1 \> 2 \> 3 \> 4 \> 5 \\
+    1 \> 2 \> 3 \> 4 \> 5 \\
+    1 \> 2 \> 3 \> 4 \> 5 \\
+\end{tabbing}
+    
+\end{document}

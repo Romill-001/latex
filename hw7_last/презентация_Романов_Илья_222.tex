@@ -1,0 +1,211 @@
+\documentclass[aspectratio=169]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[russian,english]{babel}
+\usepackage{amsmath}
+\usepackage{cmap}
+\usepackage{caption}
+\usepackage{xcolor}
+\usepackage{listings}
+
+\usetheme{Singapore} % Выбор темы презентации
+
+\title{Набор и нумерация выключенных формул в \LaTeX} 
+\author{Романов Илья 09-222}
+\date{\today}
+\logo{\large \LaTeX{}}
+
+
+\begin{document}
+
+\begin{frame}
+    \titlepage 
+\end{frame}
+
+\logo{}
+
+
+\begin{frame}{Содержание}
+    \tiny
+    \tableofcontents
+\end{frame}
+
+\section{Необходимые пакеты}
+\begin{frame}{Необходимые пакеты}
+    \begin{itemize}
+        \item \bf{\textbackslash usepackage\{amsmath\}}
+        \item \bf{\textbackslash usepackage\{mathtools\}}
+    \end{itemize}
+\end{frame}
+
+\section{Необходимое окружение}
+\begin{frame}{Необходимое окружение}
+    \begin{minipage}[t]{0.45\textwidth}
+        \begin{block}{Нумерованные формулы}
+            \begin{itemize}
+                \item \bf{equation}
+            \end{itemize}
+        \end{block}
+    \end{minipage}
+
+    \begin{minipage}[t]{0.45\textwidth}
+        \begin{block}{Ненумерованные формулы}
+            \begin{itemize}
+                \item \bf{equation*} (требует подключения пакета amsmath)
+                \item \bf{displaymath}
+            \end{itemize}
+        \end{block}
+    \end{minipage}
+\end{frame}
+
+\section{Дроби}
+\begin{frame}{Дроби}
+    \begin{minipage}{0.3\textwidth}
+        \bf{\textbackslash frac\{...\}\{...\}}
+        
+        \begin{equation*}
+            text \quad \frac{1}{2} \quad text
+        \end{equation*}   
+    \end{minipage}
+    \begin{minipage}{0.3\textwidth}
+        \bf{\textbackslash tfrac\{...\}\{...\}}
+
+        \begin{equation*}
+            text \quad \tfrac{1}{2} \quad text
+        \end{equation*}  
+    \end{minipage}
+    \begin{minipage}{0.3\textwidth}
+        \bf{\textbackslash dfrac\{...\}\{...\}}
+
+        $text \quad \dfrac{1}{2} \quad text$
+    \end{minipage}
+\end{frame}
+
+\section{Математические операции}
+\begin{frame}{Математические операции}
+    \begin{itemize}
+        \item Сумма - \textbackslash sum $\displaystyle\sum$
+        \item Интеграл - \textbackslash int $\displaystyle\int$ 
+        \item Произведение - \textbackslash prod $\displaystyle\prod$
+    \end{itemize}
+\end{frame}
+
+\section{Пределы математических операций}
+\begin{frame}{Пределы математических операций}
+    \textbf{Способы объявления пределов:}
+    \begin{itemize}
+        \item Использование операции без конструкций – выводит на экран символ операции.
+        \item Использование конструкции \_\{min\} $\wedge$ \{max\}.
+        \item Использование команды \textbackslash limits\_\{min\} $\wedge$ \{max\}.
+    \end{itemize}
+\end{frame}
+
+\section{Разница между \_\{min\} $\wedge$ \{max\} и \textbackslash limits\_\{min\} $\wedge$ \{max\}.}
+\begin{frame}{Разница между \_\{min\} $\wedge$ \{max\} и \textbackslash limits\_\{min\} $\wedge$ \{max\}.}
+    \bf
+    \centering
+    Использование \textbackslash limits\_\{min\} $\wedge$ \{max\}:
+    \begin{equation*}
+            \textstyle\sum\limits_{k=0}^{n}
+    \end{equation*}
+
+    Использование \textbackslash \_\{min\} $\wedge$ \{max\}:
+    \begin{equation*}
+            \textstyle\sum_{k=0}^{n}
+    \end{equation*}    
+\end{frame}
+
+\section{Скобки и ограничители}
+\begin{frame}{Скобки и ограничители}
+    \textbf{Скобки в \LaTeX можно задавать как при помощи экранирования символов, так и при помощи различных команд:}
+
+    \small
+    ( a ), [ b ], \textbackslash\{ c \textbackslash\}, | d |, \textbackslash| e \textbackslash|,
+    \textbackslash langle f \textbackslash rangle, \textbackslash lfloor g \textbackslash rfloor,\\
+    \textbackslash lceil h \textbackslash rceil,\\
+    / j \textbackslash backslash, \textbackslash lbrack k \textbackslash rbrack
+
+    \centering
+    $( a ), [ b ], \{ c \}, | d |, \| e \|,
+    \langle f \rangle, \lfloor g \rfloor,
+    \lceil h \rceil,
+    / j \backslash, \lbrack k \rbrack
+    $
+\end{frame}
+
+\section{Конструкция \textbackslash left ... \textbackslash right}
+\begin{frame}{Конструкция \textbackslash left ... \textbackslash right}
+    \textbf{Данная конструкция предназначена для автоматического определения размеров символов-ограничителей.}
+
+    \small
+    \textit{Примеры использования:}
+
+    \textbackslash left(\textbackslash frac\{a + b\}\{d + c\}\textbackslash right) $\left(\dfrac{a + b}{d + c}\right)$
+
+    \textbackslash left\{\textbackslash frac\{a + b\}\{d + c\}\textbackslash right\} $\left\{\dfrac{a + b}{d + c}\right\}$
+
+    \textbackslash left[\textbackslash frac\{a + b\}\{d + c\}\textbackslash right] $\left[\dfrac{a + b}{d + c}\right]$
+
+    \textbackslash left\{\textbackslash frac\{a + b\}\{d + c\}\textbackslash right. $\left\{\dfrac{a + b}{d + c}\right.$
+\end{frame}
+
+\section{Ручное определение размеров}
+\begin{frame}{Ручное определение размеров}
+    \textbf{Автоматическое изменение размера разделителей не всегда может приводить к желаемому результату, поэтому размеры разделителей можно определить самому с помощью команд-модификаторов:}
+    \begin{minipage}{0.45\textwidth}
+        \begin{itemize}
+            \item \textbackslash big
+            \item \textbackslash bigg
+            \item \textbackslash Big
+            \item \textbackslash Bigg
+        \end{itemize}
+    \end{minipage}
+    \begin{minipage}{0.45\textwidth}
+        \centering
+        \textbackslash big( \textbackslash bigg( \textbackslash Big( \textbackslash Bigg(
+
+        $\big( \bigg( \Big( \Bigg($
+    \end{minipage}
+\end{frame}
+
+\section{Пробелы в формулах}
+\begin{frame}{Пробелы в формулах}
+    \textit{Всего есть 2 основные команды для набора пробелов:}
+    \begin{itemize}
+        \item \textbackslash quad - выдаёт пробел размером равным размеру используемого шрифта, т.е., если шрифт размером 11п, то команда выдаст пробел размером в 11п.
+        \item \textbackslash qquad - удвоенный quad
+    \end{itemize}
+    \textit{Однако эти команды могут быть избыточны, поэтому существуют альтернативы:}
+    \begin{center}
+        \begin{tabular}[h]{|c|c|c|}
+        \hline
+        Команда & Описание & Размер \\ \hline
+        \textbackslash , & Маленький пробел & 3/18 quad'а\\ \hline
+        \textbackslash : & Средний пробел & 4/18 quad'а\\ \hline
+        \textbackslash ; & Большой пробел & 5/18 quad'а\\ \hline
+        \textbackslash ! & Негативный пробел & -3/18 quad'а\\ \hline
+        \end{tabular}
+    \end{center}
+\end{frame}
+
+\section{Текст в формулах}
+\begin{frame}{Текст в формулах}
+    \textbf{Для добавления в формулу текста используются следующие команды:}
+    \begin{itemize}
+        \item \textbackslash text \{...\} - стандартная команда для добавления текста
+        \item \textbackslash mbox \{...\} - альтернатива первой команде
+        \item \textbackslash textrm \{...\} - использование стандартного шрифта
+        \item \textbackslash textbf \{...\} - жирный текст
+        \item \textbackslash textit \{...\} - курсивный текст
+    \end{itemize}
+\end{frame}
+
+\section{Ссылки и метки на формулы}
+\begin{frame}{Ссылки и метки на формулы}
+    Для создания метки на формулу используется команда \textbf{\textbackslash label\{eq:метка\}}.
+
+    Далее в тексте можно использовать команду \textbf{\textbackslash eqref\{eq:метка\}}, которая выведет номер формулы в скобочка.
+
+    Можно использовать и команду \textbf{\textbackslash ref\{eq:метка\}}, но в данном случае номер формулы будет без скобочек.
+\end{frame}
+\end{document}

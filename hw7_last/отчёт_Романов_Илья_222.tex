@@ -1,0 +1,191 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8x]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[russian,english]{babel}
+\usepackage{amsmath}
+\usepackage{cmap}
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{setspace}
+\usepackage[left=3cm, right=1.5cm, top=2cm, bottom=2cm]{geometry}
+\renewcommand{\labelenumii}{\arabic{enumi}.\arabic{enumii}.}
+
+\begin{document}
+
+\begin{center}
+\hfill \break
+\textbf{\large{Министерство науки и высшего образования Российской Федерации\\
+Федеральное государственное автономное образовательное\\
+учреждение высшего образования}}
+\\
+\large{\textbf{«КАЗАНСКИЙ (ПРИВОЛЖСКИЙ) ФЕДЕРАЛЬНЫЙ УНИВЕРСИТЕТ»}}\\
+\hfill \break
+\large{ИНСТИТУТ ВЫЧИСЛИТЕЛЬНОЙ МАТЕМАТИКИ\\ И ИНФОРМАЦИОННЫХ ТЕХНОЛОГИЙ}\\
+\hfill \break
+\large{Кафедра прикладной математики и искусственого интеллекта}\\
+\hfill\break
+\hfill \break
+\large{Направление подготовки: 01.03.04 – Прикладная математика}\\
+\hfill \break
+\hfill \break
+\textbf{\large{ОТЧЁТ}}\\
+\large{По дисциплине <<Современные издательские системы>>}\\
+\large{на тему:}\\
+\large{<<Набор и нумерация выключенных формул в \LaTeX>>}\\
+\hfill \break
+\hfill \break
+\end{center}
+
+\hfill \break
+\begin{flushright}
+			
+    \large{Выполнил:}
+    
+    \large{студент группы 09-222}
+    
+    \large{Романов И. И.}
+    
+    \large{Проверил:}
+    
+    \large{Стехина К.Н.}
+    
+\end{flushright}
+\vfill
+\begin{center} \large{Казань, 2024 год} \end{center}
+\thispagestyle{empty}
+
+\newpage
+\begin{center}
+\renewcommand{\contentsname}{Содержание}
+\fontsize{14}{1.15}\selectfont
+\mdseries\selectfont{\tableofcontents}
+\newpage
+\end{center}
+\setlength{\parindent}{1.25cm}
+\newpage
+\selectfont\onehalfspacing{
+\section{Постановка задачи}
+\hspace{1.25cm}Необходимо изучить и освоить на практике набор выклбюченных формул в системе LaTeX. Особое внимание при поиске информации необходимо уделить следующим пунктам:
+\begin{itemize}
+    \item Нумерованные и ненумерованные выключенные формулы.
+    \item Организация ссылок и меток на формулы.
+    \item Дроби, изменение шрифта для дробей.
+    \item Интегралы, суммы, произведения и пределы для них.
+    \item Скобки и знаки-ограничители. Изменение их размеров.
+    \item Пробелы в формулах.
+    \item Текст в формулах.
+\end{itemize}
+
+\section{Выключенные формулы}
+\hspace{1.25cm}Для корректного набора формул, в частности выключенных, необходимо подклю\-чить пакеты \textsf{amsmath} и \textsf{mathtools}.
+
+Выключенными формулами в LaTeX назваются формулы, которые находятся на отдельной строке в тексте. 
+Обычно такой формат формул используется для подведения итогов вычислений или для выделения записей, на которые нужно обратить внимание.
+
+Выключенные формулы бывают нумерованными и ненумерованными. Нумеро\-ван\-ные формулы имеют в правой части страницы порядковый номер.
+Номера формул в документе начинаются с 1 и идут по порядку. Ненумерованные формулы же номера в правой части страницы не имеют.
+Чтобы в документе добавить нумерованную формулу необходимо использовать окружение \textsf{equation}.
+Для ненумерованных формул же необхо\-димо использовать окружение \textsf{equation*} либо \textsf{displaymath}
+
+Пример выключенной нумерованной формулы:
+\begin{equation}
+    a^2 + b^2 = c^2
+\end{equation}
+\section{Ссылки и метки на формулы}
+\hspace{1.25cm}Для ссылки на выкюченную формулу в LaTeX необходимо использовать команду \textsf{\textbackslash label\{eq:имя\_метки\}} внутри окружения после написанной формулы.
+Чтобы в тексте документа сделать ссылку на формулу нужно использовать команду \textsf{\textbackslash eqref\{eq:имя\_метки\}}
+
+\section{Дроби}
+\hspace{1.25cm}В оформлении формул в LaTeX есть два основных стиля \textsf{\textbackslash displaystyle} (по умолча\-нию используется в выключенных формулах) и \textsf{\textbackslash textstyle}.
+Их использование можно увидеть на примере дробей в LaTeX.
+
+Для создания дроби в выклбюченных формулах в LaTeX необходимо использовать команду \textsf{\textbackslash frac\{...\}\{...\}}.
+Для задания дроби в текстовом стиле (маленькая дробь) необхо\-димо использовать команду \textsf{\textbackslash tfrac\{...\}\{...\}}.
+Для задания дроби в дисплейном стиле (большая дробь) необходимо использовать команду \textsf{\textbackslash dfrac\{...\}\{...\}}.
+
+\section{Математические операции}
+\hspace{1.25cm}Для набора математических операций, таких как сумма, интеграл, произведение,
+нужно использовать соответственно команды \textsf{\textbackslash sum}, \textsf{\textbackslash int}, \textsf{\textbackslash prod}.
+
+Для задания пределов в этих операциях можно использовать две конструкции: \textsf{\_\{min\} $\widehat{}$ \{max\}} и \textsf{\textbackslash limits\_\{min\} $\widehat{}$ \{max\}}.
+
+При использованит первой конструкции для математической операции пределы будут помещены справа от знака операции,
+при использовании же второй команды пределы будут помещены сверху и снизу от знака операции.
+
+\section{Знаки-ограничители}
+\hspace{1.25cm}В формулах LaTeX можно использовать различные скобки и знаки-ограничители.
+Помимо стандартных круглых скобок, знаки-ограничители можно задать при помощи экранирования символов и специальных команд, например:\\
+\textsf{( a ), [ b ], \textbackslash\{ c \textbackslash\}, | d |, \textbackslash| e \textbackslash|,
+\textbackslash langle f \textbackslash rangle, \textbackslash lfloor g \textbackslash rfloor,
+\textbackslash lceil h \textbackslash rceil,\\
+/ j \textbackslash backslash, \textbackslash lbrack k \textbackslash rbrack}
+
+\begin{equation*}
+( a ), [ b ], \{ c \}, | d |, \| e \|,
+\langle f \rangle, \lfloor g \rfloor,
+\lceil h \rceil,
+/ j \backslash, \lbrack k \rbrack
+\end{equation*}
+
+Изанчально все скобки и знаки-ограничители одного размера.
+Это может пов\-ли\-ять на восприятие формулы, поэтому рекомендуется использовать парную команду \textsf{\textbackslash left ... \textbackslash right}.
+Эта команда автоматически определяет размеры скобок в формулах. Задаются левая и правая скобка. Также можно задать скобку только с одной стороны.
+Для этого вместо одной и скобок нужно использовать точку.
+
+В некоторых случаях автоматически-определенные скобки могут быть избыточ\-ными, поэтому можно использовать команды для больших знаков-ограничителей:\\
+\textbackslash big( \textbackslash bigg( \textbackslash Big( \textbackslash Bigg(
+
+$$\big( \bigg( \Big( \Bigg($$
+
+\section{Пробелы в формулах}
+\hspace{1.25cm}Всего есть 2 основные команды для набора пробелов:
+\begin{itemize}
+    \item \textsf{\textbackslash quad} - выдаёт пробел размером равным размеру используемого шрифта, т.е., если шрифт размером 11п, то команда выдаст пробел размером в 11п.
+    \item \textsf{\textbackslash qquad} - удвоенный quad
+\end{itemize}
+Однако эти команды могут быть избыточны, поэтому существуют альтернативы:
+\begin{center}
+    \begin{tabular}[h]{|c|c|c|}
+    \hline
+    Команда & Описание & Размер \\ \hline
+    \textbackslash , & Маленький пробел & 3/18 quad'а\\ \hline
+    \textbackslash : & Средний пробел & 4/18 quad'а\\ \hline
+    \textbackslash ; & Большой пробел & 5/18 quad'а\\ \hline
+    \textbackslash ! & Негативный пробел & -3/18 quad'а\\ \hline
+    \end{tabular}
+\end{center}
+
+\section{Текст в формулах}
+\hspace{1.25cm}Для добавления в формулу текста используются следующие команды:
+\begin{itemize}
+    \item \textsf{\textbackslash text \{...\}} - стандартная команда для добавления текста
+    \item \textsf{\textbackslash mbox \{...\}} - альтернатива первой команде
+    \item \textsf{\textbackslash textrm \{...\}} - использование стандартного шрифта
+    \item \textsf{\textbackslash textbf \{...\}} - жирный текст
+    \item \textsf{\textbackslash textit \{...\}} - курсивный текст
+    \item \textsf{\textbackslash mathrm \{...\}} - прямой текст в формуле
+\end{itemize}
+\clearpage
+
+\section{Выводы}
+\hspace{1.25cm}В ходе выполнения работы мы научились набирать выключенные формулы в LaTeX.
+Были изучены все наиболее важные аспекты работы с выключенными формулами, набор математических опреторов, скобок, пробелов, набор текста в формулах и другое.
+\clearpage
+
+\section{Список литературы}
+\renewcommand\refname{}
+\begin{thebibliography}{2}
+    \bibitem{} 
+    Р.В. Загретдинов, Ф.М. Албаев, Т.М.Гаврилова, С.Н. Перфилов. 
+    {\bf Издательская система LaTeX. Краткое руководство} -- 
+    Казань, 
+    1994, 
+    96 стр.
+    \bibitem{} 
+    {\bf Математические формулы в LaTeX} -- 
+    Викиучебник. 
+\end{thebibliography}
+}
+\end{document}

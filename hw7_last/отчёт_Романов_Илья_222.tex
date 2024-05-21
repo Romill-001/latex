@@ -135,12 +135,12 @@
 Для этого вместо одной и скобок нужно использовать точку.
 
 В некоторых случаях автоматически-определенные скобки могут быть избыточ\-ными, поэтому можно использовать команды для больших знаков-ограничителей:\\
-\textbackslash big( \textbackslash bigg( \textbackslash Big( \textbackslash Bigg(
+\textsf{\textbackslash big( \textbackslash bigg( \textbackslash Big( \textbackslash Bigg(}
 
 $$\big( \bigg( \Big( \Bigg($$
 
 \section{Пробелы в формулах}
-\hspace{1.25cm}Всего есть 2 основные команды для набора пробелов:
+\hspace{1.25cm}Поскольку внутри формул в LaTeX пробелы не учитываются, можно использовать специальные команды, которые создают пробелы:
 \begin{itemize}
     \item \textsf{\textbackslash quad} - выдаёт пробел размером равным размеру используемого шрифта, т.е., если шрифт размером 11п, то команда выдаст пробел размером в 11п.
     \item \textsf{\textbackslash qquad} - удвоенный quad
@@ -150,10 +150,10 @@ $$\big( \bigg( \Big( \Bigg($$
     \begin{tabular}[h]{|c|c|c|}
     \hline
     Команда & Описание & Размер \\ \hline
-    \textbackslash , & Маленький пробел & 3/18 quad'а\\ \hline
-    \textbackslash : & Средний пробел & 4/18 quad'а\\ \hline
-    \textbackslash ; & Большой пробел & 5/18 quad'а\\ \hline
-    \textbackslash ! & Негативный пробел & -3/18 quad'а\\ \hline
+    \textsf{\textbackslash ,} & Маленький пробел & 3/18 quad'а\\ \hline
+    \textsf{\textbackslash :} & Средний пробел & 4/18 quad'а\\ \hline
+    \textsf{\textbackslash ;} & Большой пробел & 5/18 quad'а\\ \hline
+    \textsf{\textbackslash !} & Негативный пробел & -3/18 quad'а\\ \hline
     \end{tabular}
 \end{center}
 
